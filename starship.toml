@@ -93,6 +93,11 @@ symbol = " "
 [julia]
 symbol = " "
 
+[kubernetes]
+disabled = false
+format = 'on [⛵ ($user on )($cluster in )$context \($namespace\)](dimmed green) '
+detect_folders = ['**/manifests/**']
+
 [lua]
 symbol = " "
 
