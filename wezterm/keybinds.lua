@@ -58,14 +58,11 @@ end
 local function activate_left_pane_across_tabs(win, pane)
 	local mux_win = win:mux_window()
 	local tabs = mux_win:tabs()
-	if #tabs == 1 then
-		return
-	end
 	local act_tab = win:active_tab()
 	local pi = pane_index(act_tab:panes(), pane)
 	local ti = tab_index(tabs, act_tab)
 
-	-- tab_index: last, pane_index: 1 -> activate last tab and its last pane
+	-- tab_index: 1, pane_index: 1 -> activate last tab and its last pane
 	if ti == 1 and pi == 1 then
 		local tab = tabs[#tabs]
 		local panes = tab:panes()
@@ -126,6 +123,17 @@ end
 return {
 	leader = { key = "n", mods = "CTRL" },
 	keys = {
+		{
+			key = "¥",
+			action = wezterm.action.SendKey({
+				key = "\\",
+			}),
+		},
+		{
+			key = "¥",
+			mods = "ALT",
+			action = wezterm.action.SendKey({ key = "¥" }),
+		},
 		{
 			key = "d",
 			mods = "LEADER",

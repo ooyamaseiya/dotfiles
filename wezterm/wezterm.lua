@@ -12,11 +12,11 @@ end)
 local config = wezterm.config_builder()
 
 -- This is where you actually apply your config choices
-config.scrollback_lines = 10000
+config.scrollback_lines = 100000
 
 -- Style
 config.color_scheme = "Tokyo Night Storm"
-config.window_background_opacity = 0.5
+config.window_background_opacity = 0.6
 config.macos_window_background_blur = 3
 ----------------------------------------------------
 -- Tab
@@ -25,15 +25,20 @@ config.macos_window_background_blur = 3
 config.window_decorations = "RESIZE"
 -- タブバーの表示
 config.show_tabs_in_tab_bar = true
+config.show_new_tab_button_in_tab_bar = false
 -- タブが一つの時は非表示
 config.hide_tab_bar_if_only_one_tab = false
-
--- config.show_close_tab_button_in_tabs = false
 
 -- タブバーの透過
 config.window_frame = {
 	inactive_titlebar_bg = "none",
 	active_titlebar_bg = "none",
+}
+
+config.colors = {
+	tab_bar = {
+		inactive_tab_edge = "none",
+	},
 }
 
 -- タブバーを背景色に合わせる
@@ -42,8 +47,8 @@ config.window_background_gradient = {
 }
 
 -- タブタイトルのフォーマット
-local SOLID_LEFT_ARROW = wezterm.nerdfonts.pl_right_hard_divider
-local SOLID_RIGHT_ARROW = wezterm.nerdfonts.pl_left_hard_divider
+local SOLID_LEFT_ARROW = wezterm.nerdfonts.ple_upper_right_triangle
+local SOLID_RIGHT_ARROW = wezterm.nerdfonts.ple_lower_left_triangle
 
 wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_width)
 	local background = "#5c6d74"
