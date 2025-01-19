@@ -1,0 +1,20 @@
+/Users/ooyamaseiya/.zshrc
+/Users/ooyamaseiya/.vimrc
+/Users/ooyamaseiya/.config/zsh-abbr/user-abbreviations
+/Users/ooyamaseiya/.config/starship.toml
+/Users/ooyamaseiya/.config/sheldon/plugins.toml
+/Users/ooyamaseiya/.config/nvim/init.lua
+/Users/ooyamaseiya/.config/nvim/lua/config/keymap.lua
+/Users/ooyamaseiya/.config/nvim/lua/config/option.lua
+/Users/ooyamaseiya/.config/nvim/lua/config/lazy.lua
+/Users/ooyamaseiya/.config/nvim/lua/plugins/nvim-highlight-colors.lua
+/Users/ooyamaseiya/.config/nvim/lua/plugins/theme.lua
+/Users/ooyamaseiya/.config/nvim/lua/plugins/lualine.lua
+/Users/ooyamaseiya/.config/nvim/lua/plugins/hop.lua
+/Users/ooyamaseiya/.config/wezterm/keybinds.lua
+/Users/ooyamaseiya/.config/wezterm/wezterm.lua
+/Users/ooyamaseiya/.config/wezterm/tab.lua
+/Users/ooyamaseiya/.config/zed/keymap.json
+/Users/ooyamaseiya/.config/zed/settings.json
+/Users/ooyamaseiya/Library/Application Support/Code/User/settings.json
+/Users/ooyamaseiya/Library/Application Support/Code/User/keybindings.json

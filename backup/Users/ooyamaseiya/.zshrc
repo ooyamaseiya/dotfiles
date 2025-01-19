@@ -1,6 +1,7 @@
 export KREW_PATH="${KREW_ROOT:-$HOME/.krew}/bin"
 export PATH="$PATH:$PYENV_ROOT:$KREW_PATH"
 
+XDG_CONFIG_HOME=~/.config
 ENHANCD_FILTER="fzf --height 50% --preview 'eza --tree --git-ignore --level 1 --only-dirs --color=always {}':fzy"
 
 # For kubectl autocompletion
