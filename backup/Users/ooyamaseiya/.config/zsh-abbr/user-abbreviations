@@ -1,9 +1,0 @@
-abbr ls='ls -G --color=always'
-abbr ll='ls -lh --color=always'
-abbr ..2='cd ../..'
-abbr ..3='cd ../../..'
-abbr ..4='cd ../../../..'
-abbr exa='eza --tree --level 1 --color=always'
-abbr k=kubectl
-abbr kn=kubectl-ns
-abbr n=nvim
